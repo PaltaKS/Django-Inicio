@@ -3,40 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso en línea de Matemáticas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-        }
-        h1, h2 {
-            color: #8a0774;
-        }
-        p{
-            color: #0c964a;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Helldivers</title>
+    {% load static %}
+    <link type="text/css" href='{% static "css/plantillaBarraNavegacion.css" %}' rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -47,7 +16,7 @@
     <main>
         <section>
             <h2>Esta es mi historia por la democracia del Juego</h2>
-            <img src="presentacion.jpg" alt="Helldivers 2">
+            <img src='{% static "imagenes/presentacion.jpg" %}' alt="Helldivers 2">
         </section>
         
         <section>
